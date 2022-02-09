@@ -1,0 +1,41 @@
+\ Some examples of simple list functions
+
+\ take head of list
+(define car (lambda ((a . d)) a))
+
+\ take tail of list
+(define cdr (lambda ((a . d)) d))
+
+\ take head of head of list
+(define caar (lambda (((aa . da) . d)) aa))
+
+\ take head of tail of list
+(define cadr (lambda ((a ad . dd)) ad))
+
+\ take tail of head of list
+(define cdar (lambda (((aa . da) . d)) da))
+
+\ take tail of tail of list
+(define cddr (lambda ((a ad . dd)) dd))
+
+\ make a list of all arguments
+(define list (lambda l l))
+
+\ return the length of a list
+(define length
+  (lambda (())       0
+          ((a . as)) (+ 1 (length as))))
+
+\ append two lists
+(define append
+   (lambda (()       bs) bs
+           ((a . as) bs) (cons a (append as bs))))
+
+\ reverse a list
+(define reverse
+  (lambda (as)          (reverse as ())
+          (()       bs) bs
+	  ((a . as) bs) (reverse as (cons a bs))))
+
+\ equality test
+(define equal (lambda (x x) 'T (x y) ()))

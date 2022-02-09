@@ -1,0 +1,15 @@
+\ requires listfunctions.le
+
+\ reseed by defining a new seed
+
+(define seed 1234567)
+
+
+\ (rnd) will give you a large random integer (between 0 and 1073741793)
+\ (rnd n) will give you a random number between 0 and n-1
+
+(define rnd
+   (lambda () (cadr (list (define seed (% (+ (* seed 69069) 131)
+                                          0x7FFFFFC3))
+                          (/ (if (< seed 0) (- seed) seed) 2)))
+	   (n) (% (rnd) n)))
