@@ -1,0 +1,38 @@
+\section{PLD LISP}
+\subsection{a) - PLD-LISP}
+Reading through the file \emph{listfunctions.le} I've reused the code
+for returning the length of a list. I've restructured it to be able
+to return the sum of a list instead.
+
+\begin{minted}[linenos, bgcolor = bg, breaklines]{LISP}
+    ; return the sum of a list
+    (defin sum
+        (lambda (())    0
+            ((a . as)) ( +a (sum as))))
+\end{minted}
+
+\subsection{b) - Python}
+\begin{minted}[linenos, bgcolor = bg, breaklines]{python}
+    # return the sum of a list
+    def sum_of_list(lst):
+        sum = 0
+        for val in lst:
+            total = total + val
+        return total
+\end{minted}
+
+I've chosen to implement the same type of function in python since I know
+python fairly well.
+Comparing the size of the two programs they are fairly similarly, with the python
+program being a couple of extra lines bigger compared to the PLD-LISP. This could
+possible add up if a person were to implement a bigger program.
+\\
+Personally I know python better and I think it's easier to read that the PLD-LISP.
+\\
+PLD-LISP also has a numerous ammount of parantheses that can really mess with the 
+programmer if you're not careful.
+\\
+As for effort to program the two functions, I personally found the python program
+easier to make. Again, this is because I know python better than PLD-LISP, so in all
+fairness I don't think this is a very representable example of the question regarding
+"Syntaxes for size, readability and effor to program".

@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{} return the sum of a list}
+    \PYG{k}{def} \PYG{n+nf}{sum\PYGZus{}of\PYGZus{}list}\PYG{p}{(}\PYG{n}{lst}\PYG{p}{):}
+        \PYG{n+nb}{sum} \PYG{o}{=} \PYG{l+m+mi}{0}
+        \PYG{k}{for} \PYG{n}{val} \PYG{o+ow}{in} \PYG{n}{lst}\PYG{p}{:}
+            \PYG{n}{total} \PYG{o}{=} \PYG{n}{total} \PYG{o}{+} \PYG{n}{val}
+        \PYG{k}{return} \PYG{n}{total}
+\end{Verbatim}

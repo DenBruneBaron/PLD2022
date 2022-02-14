@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{; return the sum of a list}
+    \PYG{p}{(}\PYG{n+nv}{defin} \PYG{n+nv}{sum}
+        \PYG{p}{(}\PYG{k}{lambda} \PYG{p}{(())}    \PYG{l+m+mi}{0}
+            \PYG{p}{((}\PYG{n+nv}{a} \PYG{o}{.} \PYG{n+nv}{as}\PYG{p}{))} \PYG{p}{(} \PYG{n+nv}{+a} \PYG{p}{(}\PYG{n+nv}{sum} \PYG{n+nv}{as}\PYG{p}{))))}
+\end{Verbatim}
