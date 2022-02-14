@@ -39,3 +39,8 @@
 
 \ equality test
 (define equal (lambda (x x) 'T (x y) ()))
+
+\ return the sum of a list
+(define sum
+  (lambda (())       0
+          (( a . as )) ( + a (sum as))))
