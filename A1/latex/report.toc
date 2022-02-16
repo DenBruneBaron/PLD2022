@@ -4,4 +4,8 @@
 \contentsline {subsection}{\numberline {2.1}a) - PLD-LISP}{1}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}b) - Python}{1}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Bootstrapping}{2}{section.3}%
-\contentsline {section}{\numberline {4}Comments}{2}{section.4}%
+\contentsline {subsection}{\numberline {3.1}a)}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}b)}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Comments}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}a)}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}b)}{3}{subsection.4.2}%

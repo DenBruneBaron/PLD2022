@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cm}{/* Initialize the variable a}
+\PYG{c+cm}{    a = 0;}
+\PYG{c+cm}{/* Set the minimum size */}
+\PYG{+w}{    }\PYG{n}{min}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{100}\PYG{p}{;}
+\end{Verbatim}

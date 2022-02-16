@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.11)  14 FEB 2022 11:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.11)  16 FEB 2022 14:08
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -803,7 +803,17 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip66
-) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (./tombstone.sty
+Package: tombstone 2016/02/10 v0.1 LaTeX package for drawing tombstone diagrams
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/xifthen/xifthen.sty
+Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+)) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip67
 
@@ -1025,42 +1035,42 @@ runsystem(del report.aex)...executed.
  (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 60.
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 61.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 61.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 60.
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 60.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 61.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 60.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 60.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 61.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    ... okay on input line 61.
 Package newfloat Info: `float' package detected.
 Package newfloat Info: `wrapfig' package detected.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1092,7 +1102,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 60.
+Package hyperref Info: Link coloring OFF on input line 61.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1102,42 +1112,42 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count426
 )
-LaTeX Info: Redefining \ref on input line 60.
-LaTeX Info: Redefining \pageref on input line 60.
-LaTeX Info: Redefining \nameref on input line 60.
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \nameref on input line 61.
  (./report.out) (./report.out)
 \@outlinefile=\write8
 \openout8 = `report.out'.
 
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 60.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 60.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 61.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 61.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 60.
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line 64.
+(lastpage)             ! on input line 61.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 65.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 64.
+(Font)              scaled to size 11.03998pt on input line 65.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 64.
+(Font)              scaled to size 8.27998pt on input line 65.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 64.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
+(Font)              scaled to size 6.43999pt on input line 65.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
  (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 64.
+(Font)              scaled to size 11.03998pt on input line 65.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 64.
+(Font)              scaled to size 8.27998pt on input line 65.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 64.
+(Font)              scaled to size 6.43999pt on input line 65.
  [1
 
 {g:/Developer_Libraries/LaTeX/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./report.toc
@@ -1179,30 +1189,49 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
  (./_minted-report/49D34A766726D95EA6D80BA3F641256D7C2E7F49E087B8E8E8DF5244CE287E39.pygtex))pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.85 
+l.86 
       [1
 
-] (./Sections/Section_3.tex) (./Sections/Section_4.tex) [2] 
+] (./Sections/Section_3.tex
+<Figures/PLD_A1_Q3_A_cropped.jpg, id=88, 1922.68312pt x 1159.33125pt>
+File: Figures/PLD_A1_Q3_A_cropped.jpg Graphic file (type jpg)
+<use Figures/PLD_A1_Q3_A_cropped.jpg>
+Package pdftex.def Info: Figures/PLD_A1_Q3_A_cropped.jpg  used on input line 6.
+(pdftex.def)             Requested size: 258.75pt x 156.00764pt.
+<Figures/PLD_A1_Q3_B_cropped.jpg, id=89, 1909.88531pt x 1053.1847pt>
+File: Figures/PLD_A1_Q3_B_cropped.jpg Graphic file (type jpg)
+<use Figures/PLD_A1_Q3_B_cropped.jpg>
+Package pdftex.def Info: Figures/PLD_A1_Q3_B_cropped.jpg  used on input line 14.
+(pdftex.def)             Requested size: 258.75pt x 142.67197pt.
+ [2 <./Figures/PLD_A1_Q3_A_cropped.jpg>])
+Underfull \hbox (badness 10000) in paragraph at lines 18--91
+
+ []
+
+(./Sections/Section_4.tex
+\openout3 = `report.pyg'.
+
+ (./_minted-report/72C1C4568A968F4FEEC5185F080158A1938C15273FFC38043D09768A5ACA2810.pygtex)) [3 <./Figures/PLD_A1_Q3_B_cropped.jpg>] 
 AED: lastpage setting LastPage
 (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 257E120FEA0BE2ABAB006C2FA3EF944C;650.
+(rerunfilecheck)             Checksum: 717080BFBE0981BC825E73A293406A2F;931.
 runsystem(del report.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 42006 strings out of 478353
- 912754 string characters out of 5839074
- 1255452 words of memory out of 5000000
- 59428 multiletter control sequences out of 15000+600000
- 483220 words of font info for 104 fonts, out of 8000000 for 9000
+ 42254 strings out of 478353
+ 919754 string characters out of 5839074
+ 1262173 words of memory out of 5000000
+ 59642 multiletter control sequences out of 15000+600000
+ 483647 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,133p,1659b,1119s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,12n,133p,1659b,1119s stack positions out of 5000i,500n,10000p,200000b,80000s
 {g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on report.pdf (4 pages, 106416 bytes).
+Output written on report.pdf (5 pages, 1228810 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
