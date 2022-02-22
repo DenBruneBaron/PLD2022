@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{c+c1}{/// \PYGZlt{}summary\PYGZgt{}}
+\PYG{+w}{    }\PYG{c+c1}{///}
+\PYG{+w}{    }\PYG{c+c1}{/// \PYGZlt{}/summary\PYGZgt{}}
+\PYG{+w}{    }\PYG{c+c1}{/// \PYGZlt{}param name=\PYGZdq{}id\PYGZdq{}\PYGZgt{} your id \PYGZlt{}/param\PYGZgt{}}
+\PYG{+w}{    }\PYG{c+c1}{/// \PYGZlt{}returns\PYGZgt{} \PYGZlt{}/returns\PYGZgt{}}
+\PYG{+w}{    }\PYG{k}{public}\PYG{+w}{ }\PYG{n}{string}\PYG{+w}{ }\PYG{n+nf}{GetUsername}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{id}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}username\PYGZdq{}}\PYG{p}{;}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

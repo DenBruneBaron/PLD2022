@@ -15,3 +15,109 @@ a, the comment needs to be closed similarly with a `` /* '' at the end of line 1
 similar the second comment in line 3.
 
 \subsection{b)}
+
+\textbf{Advantages}
+\begin{itemize}
+    \item Readability and understanding of code
+    \item Comment out larger portions of code at once
+    \item Generating documentation
+    \item Selection between several possible implementation-specifc behaviours
+    \item Specify structured information about methods
+\end{itemize}
+
+Here are five advantages regarding comments. where the two first bullets are fairly selfexplanetory.
+
+Generating code documentation from comments can be an advantage if youu're working on large projects.
+Where providing documentation yourself can be a big and time comsuming project in itself. Knowing how
+to use eg. XML comments can be a benneficial factor in reducing an otherwise and potential
+time comsuming task by "automating" the process of documentation generation to some extend. Ofcourse
+it is not a 100\% automation, the XML still needs to be done by the programmer. 
+
+\begin{minted}[linenos, bgcolor = bg, breaklines]{cpp}
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name="id"> your id </param>
+    /// <returns> </returns>
+    public string GetUsername (int id) {
+        return "username";
+    }
+\end{minted}
+This would generate documentation for the function "GetUsername" using XML comments
+\\
+\\
+\emph{Pragmas} are comments used to give directives to the compiler which in other words
+are implementation-specific behaviours. These comments are used to make the compiler do certain things
+when compiling the a program. eg. this could be for the compiler to add something to the list
+of library dependencies, debugging information or likewise.
+
+\begin{minted}[linenos, bgcolor = bg, breaklines]{cpp}
+    #pragma comment(lib, libname)
+\end{minted}
+tells the linker to add the 'libname' library to the list of library dependencies.
+\\
+\\
+
+\begin{minted}[linenos, bgcolor = bg, breaklines]{java}
+    /**
+     * <p> This is a simple discription </p>
+     * @param a an integer
+     * @param b an integer
+     * @return the sum of the two integers
+     */
+    public class Main {
+        static void sum(int a, int b) {
+            sum = a + b;
+            return sum;
+        }
+    }
+\end{minted}
+The "comment" is usually called a "doc comment" and is used to automatically generate documentation for
+eg. functions in java.
+\\
+\\
+
+\noindent
+\textbf{Disadvantages}
+\begin{itemize}
+    \item Risk of making code unreachable
+    \item Cluttering code 
+\end{itemize}
+some of the disadvantages are as follows
+
+\begin{minted}[linenos, bgcolor = bg, breaklines]{cpp}
+    /* Initialize the variable a
+        a = 0;
+
+    \end{minted}
+
+Reusing the given example, one of the disadvantages of comment is the risk of making code unreachable
+as in this example. Since the comment i never closed.
+\\
+\\
+\begin{minted}[linenos, bgcolor = bg, breaklines]{python}
+    def __PCA(data):
+        
+        # Creating "clone" of matrix
+        data_cent = np.full_like(data,0) 
+        # Iterate the matrix subtracting the mean diatiom from each row
+        for i in range(4):
+            data_cent[:,i] = trainingFeatures[:,i] - np.mean(trainingFeatures, 1)
+        data_cent = data_cent.T
+        #data_cent = data - mean_diatom.shape
+        cov2 = np.cov(data_cent)
+        #cov_matrix = np.cov(data_cent)
+        #PCevals, PCevecs = np.linalg.eigh(cov2)
+        PCevals, PCevecs = np.linalg.eig(cov2)
+        #PCevals, PCevecs = np.linalg.eigh(cov_matrix)
+        #PCevals = np.flip(PCevals, axis=0)
+        #PCevecs = np.flip(PCevecs, axis=0)
+\end{minted}
+looking at this python code, we can see that the code has a lot of comments. Not all comments are helpful
+to other programmers as, some of the comments are actuall code which as been commented out. This makes the
+code harder for other to understand since it's not clear what is supposed to be "used/reused" and what are 
+acutall comments for what the method does.
+
+
+\subsection{c)}
+
