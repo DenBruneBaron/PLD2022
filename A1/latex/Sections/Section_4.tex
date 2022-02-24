@@ -23,9 +23,10 @@ similar the second comment in line 3.
     \item Generating documentation
     \item Selection between several possible implementation-specifc behaviours
     \item Specify structured information about methods
+    \item Comment out larger pieces of code.
 \end{itemize}
 
-Here are five advantages regarding comments. where the two first bullets are fairly selfexplanetory.
+Here are six advantages regarding comments. where the two first bullets are fairly selfexplanetory.
 
 Generating code documentation from comments can be an advantage if youu're working on large projects.
 Where providing documentation yourself can be a big and time comsuming project in itself. Knowing how
@@ -76,6 +77,48 @@ The "comment" is usually called a "doc comment" and is used to automatically gen
 eg. functions in java.
 \\
 \\
+
+If a program allows nested comments, it can be beneficial for a programmer. Since the programmer has the option
+to comment out large portions of code, that itself might also contain comments. The example below is an example
+of multiline comments in python. The class "MyClass" is functional but insde the class the function "fit()" has been
+commented out. Below the function fit. Having the ability to create multiple types of functions and comment them out
+inside the program is helpful to the programmer. Since it can eliminate wasteful time by rearranging the code eg. by having
+to remove functions completly by copy/pasting them from the program or something like that. By having the option to
+use nested comments, the programmer can test multiple types of functions/code and then remove all unnessecary code at the 
+end when the optimal solution has been found.
+
+\begin{minted}[linenos, bgcolor = bg, breaklines]{python}
+    # Single-line comment for the class
+    class MyClass:
+
+        def __init__(self):
+            pass
+    
+    """ (Start of multiline comment)
+
+        # Two single-line comments for the function fit(), which also has
+        # a multiline comment inside itself
+        def fit(self, X, t):
+            """
+            Fits the linear regression model.
+
+            Parameters
+            ----------
+            X : Array of shape [n_samples, n_features]
+            t : Array of shape [n_samples, 1]
+            """        
+            # Code that have been added later
+            n = X.shape[0]
+            X = np.array(X).reshape((n, -1))
+            t = np.array(t).reshape((n, 1))
+
+    """
+
+    def predict():
+        """
+        Method that does something.
+        """
+\end{minted}
 
 \noindent
 \textbf{Disadvantages}

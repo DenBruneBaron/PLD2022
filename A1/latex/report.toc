@@ -8,5 +8,5 @@
 \contentsline {subsection}{\numberline {3.2}b)}{3}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Comments}{3}{section.4}%
 \contentsline {subsection}{\numberline {4.1}a)}{3}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}b)}{3}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}c)}{5}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.2}b)}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}c)}{7}{subsection.4.3}%

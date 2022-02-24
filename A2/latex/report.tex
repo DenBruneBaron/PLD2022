@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage[english, danish]{babel}
+\usepackage[utf8]{inputenc}
+
+%Make Code look nice%
+\usepackage[newfloat]{minted}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+\definecolor{bg}{rgb}{0.96,0.96,0.96}
+
+\usepackage{tikz,forest}
+\usetikzlibrary{arrows.meta}
+
+% Make it possible to use mathmode in listings (math wont turn green)
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily,
+  mathescape
+}
+\usepackage{alltt}
+\usepackage{datetime}
+\usepackage{comment}
+\usepackage{xcolor}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{subfig}
+\usepackage{varwidth}
+\usepackage{tabularx}
+\usepackage{ltablex}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{tombstone}
+%math%
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{fourier}
+
+%Subfiles%
+\usepackage{lastpage}
+\usepackage{subfiles}
+
+%Personal commands
+\newcommand{\xdownarrow}[1]{%
+  {\left\downarrow\vbox to #1{}\right.\kern-\nulldelimiterspace}
+}
+
+\title{PLD Assignment 2}
+\author{Ask}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{PLD}
+\lhead{Assignment 2}
+
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\thispagestyle{empty}
+\end{titlepage}
+
+\rfoot{Side \thepage \hspace{1pt} of \pageref{mylastpage}}
+\thispagestyle{empty}
+\setcounter{page}{0}
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+\newpage 
+
+
+%-----------------
+% OPGAVE 1: 
+%-----------------
+\subfile{Sections/Section_1.tex}
+
+%-----------------
+% OPGAVE 2: 
+%-----------------
+\subfile{Sections/Section_2.tex}
+
+%-----------------
+% OPGAVE 3: 
+%-----------------
+\subfile{Sections/Section_3.tex}
+
+%-----------------
+% OPGAVE 4: 
+%-----------------
+\subfile{Sections/Section_4.tex}
+
+%-----------------
+% OPGAVE 5: 
+%-----------------
+\subfile{Sections/Section_5.tex}
+
+\label{mylastpage}
+\newpage
+\thispagestyle{empty}
+
+\end{document}

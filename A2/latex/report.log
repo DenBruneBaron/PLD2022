@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.11)  24 FEB 2022 11:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.11)  24 FEB 2022 14:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/Uddannelse/Datalogi/KU/2_aar/PLD2022/A1/latex/report.tex
-(d:/Uddannelse/Datalogi/KU/2_aar/PLD2022/A1/latex/report.tex
+**d:/Uddannelse/Datalogi/KU/2_aar/PLD2022/A2/latex/report.tex
+(d:/Uddannelse/Datalogi/KU/2_aar/PLD2022/A2/latex/report.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2021-11-22> (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -1167,125 +1167,31 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 \tf@toc=\write9
 \openout9 = `report.toc'.
 
- [0] (./Sections/Section_1.tex
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2.
- (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Overfull \hbox (27.7889pt too wide) in paragraph at lines 6--9
-[]\T1/futs/m/n/10 The above term is what I be-lie-ve we call the "om-e-ga pro-gram"or "om-e-ga combinator"$\FML/futm/m/it/10 
-$\T1/futs/m/n/10 .
- []
-
-) (./Sections/Section_2.tex
-\openout3 = `report.pyg'.
-
- (./_minted-report/default-pyg-prefix.pygstyle) (./_minted-report/default.pygstyle) (./_minted-report/F742AE1694AB199E204DAD627AAF6291287C07EE9E997A7E2F0C542E6667A966.pygtex
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 4.
-)
-\openout3 = `report.pyg'.
-
- (./_minted-report/49D34A766726D95EA6D80BA3F641256D7C2E7F49E087B8E8E8DF5244CE287E39.pygtex))pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+ [0] (./Sections/Section_1.tex) (./Sections/Section_2.tex) (./Sections/Section_3.tex) (./Sections/Section_4.tex) (./Sections/Section_5.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.86 
-      [1
+l.103 \newpage
+               [1
 
-] (./Sections/Section_3.tex
-<Figures/PLD_A1_Q3_A_cropped.jpg, id=92, 1978.39125pt x 1206.75844pt>
-File: Figures/PLD_A1_Q3_A_cropped.jpg Graphic file (type jpg)
-<use Figures/PLD_A1_Q3_A_cropped.jpg>
-Package pdftex.def Info: Figures/PLD_A1_Q3_A_cropped.jpg  used on input line 6.
-(pdftex.def)             Requested size: 258.75pt x 157.8232pt.
-<Figures/PLD_A1_Q3_B_cropped.jpg, id=93, 1428.08531pt x 1952.79562pt>
-File: Figures/PLD_A1_Q3_B_cropped.jpg Graphic file (type jpg)
-<use Figures/PLD_A1_Q3_B_cropped.jpg>
-Package pdftex.def Info: Figures/PLD_A1_Q3_B_cropped.jpg  used on input line 14.
-(pdftex.def)             Requested size: 258.75pt x 353.81223pt.
-) [2 <./Figures/PLD_A1_Q3_A_cropped.jpg>] (./Sections/Section_4.tex
-\openout3 = `report.pyg'.
-
- (./_minted-report/72C1C4568A968F4FEEC5185F080158A1938C15273FFC38043D09768A5ACA2810.pygtex) [3 <./Figures/PLD_A1_Q3_B_cropped.jpg>]
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 21.
- (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/fourier/ts1futs.fd
-File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-)
-\openout3 = `report.pyg'.
-
- (./_minted-report/C68A63852F9B268583261E5233F35A5E938C15273FFC38043D09768A5ACA2810.pygtex)
-Overfull \hbox (5.30896pt too wide) in paragraph at lines 46--54
-\T1/futs/m/n/10 This would ge-ne-ra-te do-cu-men-ta-tion for the fun-ction "Ge-tU-ser-na-me"using XML com-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--54
-
- []
-
-
-Overfull \hbox (4.17247pt too wide) in paragraph at lines 46--54
-\T1/futs/m/n/10 are implementation-specific be-haviours. The-se com-men-ts are used to ma-ke the com-
- []
-
-\openout3 = `report.pyg'.
-
-(./_minted-report/DFDBA9B6A666521DA2A4D93DAE6406DB938C15273FFC38043D09768A5ACA2810.pygtex) [4]
-Underfull \hbox (badness 10000) in paragraph at lines 57--61
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--61
-
- []
-
-\openout3 = `report.pyg'.
-
-(./_minted-report/2DFE26B4F85EACE2FBDD7B386EC69B705633056D4D41AD504206CFA15B879FF2.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--80
-
- []
-
-\openout3 = `report.pyg'.
-
-(./_minted-report/E3325455C448E17B1878F003A8A011527C2E7F49E087B8E8E8DF5244CE287E39.pygtex) [5]
-\openout3 = `report.pyg'.
-
- (./_minted-report/6B376579223268CB3904478D0C8D8FBB938C15273FFC38043D09768A5ACA2810.pygtex)
-\openout3 = `report.pyg'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--158
-
- []
-
-(./_minted-report/541D544D4C02735EFC858B1ADD9F7BBD7C2E7F49E087B8E8E8DF5244CE287E39.pygtex) [6]) [7] 
+] 
 AED: lastpage setting LastPage
 (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 0C74237258A6EA84710718A664487A73;1002.
-runsystem(del report.pyg)...executed.
-
+(rerunfilecheck)             Checksum: AA39653D2DC5707E883A5F0205F9C6AD;933.
  ) 
 Here is how much of TeX's memory you used:
- 42339 strings out of 478353
- 923572 string characters out of 5839074
- 1262611 words of memory out of 5000000
- 59696 multiletter control sequences out of 15000+600000
- 485351 words of font info for 111 fonts, out of 8000000 for 9000
+ 41663 strings out of 478353
+ 911150 string characters out of 5839074
+ 1245900 words of memory out of 5000000
+ 59102 multiletter control sequences out of 15000+600000
+ 472450 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,133p,1659b,1119s stack positions out of 5000i,500n,10000p,200000b,80000s
-{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on report.pdf (9 pages, 1595327 bytes).
+ 99i,11n,133p,1659b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
+{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
+Output written on report.pdf (3 pages, 32507 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

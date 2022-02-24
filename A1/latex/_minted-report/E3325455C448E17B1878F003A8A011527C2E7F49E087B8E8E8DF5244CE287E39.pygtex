@@ -1,0 +1,32 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{\PYGZsh{} Single\PYGZhy{}line comment for the class}
+    \PYG{k}{class} \PYG{n+nc}{MyClass}\PYG{p}{:}
+
+        \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+            \PYG{k}{pass}
+
+    \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{} (Start of multiline comment)}
+
+\PYG{l+s+sd}{        \PYGZsh{} Two single\PYGZhy{}line comments for the function fit(), which also has}
+\PYG{l+s+sd}{        \PYGZsh{} a multiline comment inside itself}
+\PYG{l+s+sd}{        def fit(self, X, t):}
+\PYG{l+s+sd}{            \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+            \PYG{n}{Fits} \PYG{n}{the} \PYG{n}{linear} \PYG{n}{regression} \PYG{n}{model}\PYG{o}{.}
+
+            \PYG{n}{Parameters}
+            \PYG{o}{\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+            \PYG{n}{X} \PYG{p}{:} \PYG{n}{Array} \PYG{n}{of} \PYG{n}{shape} \PYG{p}{[}\PYG{n}{n\PYGZus{}samples}\PYG{p}{,} \PYG{n}{n\PYGZus{}features}\PYG{p}{]}
+            \PYG{n}{t} \PYG{p}{:} \PYG{n}{Array} \PYG{n}{of} \PYG{n}{shape} \PYG{p}{[}\PYG{n}{n\PYGZus{}samples}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{]}
+            \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{            \PYGZsh{} Code that have been added later}
+\PYG{l+s+sd}{            n = X.shape[0]}
+\PYG{l+s+sd}{            X = np.array(X).reshape((n, \PYGZhy{}1))}
+\PYG{l+s+sd}{            t = np.array(t).reshape((n, 1))}
+
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+
+    \PYG{k}{def} \PYG{n+nf}{predict}\PYG{p}{():}
+        \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{        Method that does something.}
+\PYG{l+s+sd}{        \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\end{Verbatim}
