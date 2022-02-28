@@ -9,34 +9,45 @@
 typedef uint32_t heapNode;
 typedef uint16_t heapIndex;
 
-heapNode heap[0x8000] = {0};
+/* Nodes are represented as follows:                   */
+/* 0 represents (), the empty list                     */
+/* An odd value represents an integer                  */
+/* A number 0 <= n < 2^30 is represented as 2n+1       */
+/* A even value v represents a pair                    */
+/*    where (v>>16) & 0x7fff is the index of the head  */
+/*    and (v>>1) &  0x7fff is the index of the tail    */
+/* Index 0 represents the empty list () no matter what */
+/*    is stored at index 0 -- it is never followed     */
+/* Note that the most significant bit is not used, so  */
+/*    (node & 0x7ffffffff) == 0                        */
+/* This means that you can use this bit for marking    */
+/* Note that all nodes are the same size, so           */
+/*   - No size field needed                            */
+/*   - No splitting or joining of blocks needed        */
+/*   - If a free list is used, it can be singly linked */
+/*     and nodes can be taken from and put back to the */
+/*     front of the list                               */
 
-/* Nodes are represented as follows:                  */
-/* 0 represents (), the empty list                    */
-/* An odd value represents an integer                 */
-/* A number 0 <= n < 2^30 is represented as 2n+1      */
-/* A value v where the two least significant bits     */
-/*    of v are 10 represents a pair                   */
-/*    where (v>>17) & 0x7fff is the index of the head */
-/*    and (v>>1) &  0x7fff is the index of the tail   */
-/* Note that the most significant bit is not used, so */
-/*    (node & 0x7ffffffff) == 0                       */
-/* This means that you can use this bit for marking   */
+heapNode heap[0x8000];
+heapIndex nextFreeNode; /* index of next free node */
 
-heapIndex nextFreeNode = 1; /* index of next free node */
-
-/* Note: Index 0 contains 0, so represents ().  This should not chance */
-
-/* You might want to change the initialisation to suit your GC method */
-/* But do not change that heap[0] == 0 */
+void initHeap() /* initialize heap */
+{
+  /* You might want to change the initialisation to suit your GC method */
+  nextFreeNode = 1;
+}
 
 heapIndex allocateNumber(uint32_t n) /* allocate number node */
 {
-  if (n>0x7fffffff) {
-    fprintf(stderr, "Number too big to represent: %"PRIx32"\n", n);
+  if (nextFreeNode == 0x8000) {
+    fprintf(stderr, "Out of heap space\n");
     exit(1);
   }
-  heap[nextFreeNode] = (n<<1) + 1;
+  if (n>0x3fffffff) {
+    fprintf(stderr, "Number too big to represent: 0x%"PRIx32"\n", n);
+    exit(1);
+  }
+  heap[nextFreeNode] = (n<<1) | 1;
   return nextFreeNode++;
 }
 
@@ -44,7 +55,7 @@ uint32_t getNumber(heapIndex v) /* get number value of number node */
 {
   heapNode node = heap[v];
   if (node & 1 == 0) {
-    fprintf(stderr, "Not a number node: (%"PRIx32"\n", node);
+    fprintf(stderr, "Not a number node: (0x%"PRIx32"\n", node);
     exit(1);
   }
   return node >> 1;
@@ -52,11 +63,15 @@ uint32_t getNumber(heapIndex v) /* get number value of number node */
 
 heapIndex cons(heapIndex head, heapIndex tail) /* allocate pair node */
 {
-  if (head > 0x7fff || tail > 0x7fff) {
-    fprintf(stderr, "Illegal pair: (%"PRIx32", %"PRIx32")\n", head, tail);
-     exit(1);
+  if (nextFreeNode == 0x8000) {
+    fprintf(stderr, "Out of heap space\n");
+    exit(1);
   }
-  heap[nextFreeNode] = (head<<17) | (tail<<2) | 2;
+  if (head > 0x7fff || tail > 0x7fff) {
+    fprintf(stderr, "Illegal pair: (0x%"PRIx32", 0x%"PRIx32")\n", head, tail);
+    exit(1);
+  }
+  heap[nextFreeNode] = (head<<16) | (tail<<1);
   return nextFreeNode++;
 }
 
@@ -65,10 +80,10 @@ heapIndex car(heapIndex value) /* take head of pair node */
   
   heapNode node = heap[value];
   if (node & 3 != 2) {
-    fprintf(stderr, "Not a pair node: (%"PRIx32"\n", node);
+    fprintf(stderr, "Not a pair node: (0x%"PRIx32"\n", node);
     exit(1);
   }
-  return (node>>17) & 0x7fff;
+  return (node>>16) & 0x7fff;
 }
 
 heapIndex cdr(heapIndex value) /* take tail of pair node */
@@ -76,24 +91,38 @@ heapIndex cdr(heapIndex value) /* take tail of pair node */
   
   heapNode node = heap[value];
   if (node & 3 != 2) {
-    fprintf(stderr, "Not a pair node: (%"PRIx32"\n", node);
+    fprintf(stderr, "Not a pair node: (0x%"PRIx32"\n", node);
     exit(1);
   }
-  return (node>>2) & 0x7fff;
+  return (node>>1) & 0x7fff;
 }
 
-/* You can add and modify code above this line */
-  
+void printTree(heapIndex v) /* print tree */
+{
+  if (v == 0) { printf("()"); return; }
+  heapNode n = heap[v];
+  if (n & 1) {
+    printf("%"PRIu32"",getNumber(v));
+    return;
+  }
+  printf("(");
+  printTree(car(v));
+  printf(".");
+  printTree(cdr(v));
+  printf(")");
+}
+
+
 heapIndex gc(heapIndex root) /* garbage collect and return new root */
 {
   int liveCount = 0;
-
-  /* insert code here */
 
   fprintf(stderr,"%d live nodes\n", liveCount);
   return root;
 }
 
+/* You can add and modify code above this line */
+  
 /* Don't change anything below this line */
 
 heapIndex iota(uint32_t n) /* make a list of integers from 1 to n */
@@ -124,23 +153,10 @@ heapIndex makeTree(int n)
   return cons(tree,cons(allocateNumber(n),tree));
 }
 
-void printTree(heapIndex v) /* print tree */
-{
-  if (v == 0) { printf("()"); return; }
-  heapNode n = heap[v];
-  if (n & 1) {
-    printf("%"PRIu32"",getNumber(v));
-    return;
-  }
-  printf("(");
-  printTree(car(v));
-  printf(".");
-  printTree(cdr(v));
-  printf(")");
-}
-
 int main(int ac, char **av)
 {
+  initHeap();
+  
   heapIndex numbers = iota(1000); /* list of 1 .. n */
   numbers = cdr(numbers); /* drop first element */
   heapIndex primes = 0; /* will contain primes */
@@ -164,10 +180,9 @@ int main(int ac, char **av)
   printf("\n");
   printTree(tree);
   printf("\n\n");
-
-  numbers = iota(1000); /* list of 1 .. n */
+  numbers = iota(1000); /* list of 1 .. 1000 */
   numbers = cdr(numbers); /* drop first element */
-  primes = 0; /* will contain primes */
+  primes = 0; /* will contain primes at end */
   while (numbers != 0) /* until end of list */
   {
     primes = cons(car(numbers), primes);
@@ -176,7 +191,6 @@ int main(int ac, char **av)
   }
   
   primes = gc(primes);
-  
-  exit(0);
 
+  exit(0);
 }
