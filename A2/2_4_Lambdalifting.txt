@@ -1,0 +1,30 @@
+ORIGINAL CODE SNIPPET:
+
+let rec bizarre b q =
+    let mango z = b
+    in
+        if b then ( bizarre false mango )
+            else ( mango 17 , q 17 );;
+
+let dummy = function x -> false
+let bongo = bizarre true dummy;;
+
+
+STEP 1) Rename every function so it has a unique name:
+
+let rec bizarre b q =
+    let mango z = b
+    in
+        if b then ( bizarre false mango )
+            else ( mango 17 , q 17 );;
+
+let dummy = function x -> false
+let bongo = bizarre true dummy;;
+
+
+
+STEP 1, it is possible to skip step one of the algorithm, since all functions
+are "unique" in the sence that there's no dublicates of functionnames that are
+considered another function than the original.
+
+STEP 2)

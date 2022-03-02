@@ -1,8 +1,26 @@
 \section{Parameter passing mechanisms}
 \subsection{a)}
+Since we're only asked about what happens in this general case, my answer to this
+question is a more general answer. I'm not doing the actual calculations of transpose(q,q)
+In this case, the function is given the same parameter of the matrix q, hence "transpose(q,q).
+This means, that the parameters are stored in two difference local variables in the callee (transpose).
+If these local variables have different values when the call returns, there can be an ambiguity in which value is copied back to the variable.
+However in this case, I know that it is copied (written) back from left to right.
+So the "a" parameter will be copied back first. Overwriting the original value of the variable.
 
 \subsection{b)}
+Call-by-Reference can introduce "aliasing". Meaning that if a function is given the same variable to/as two different reference parameters.
+Those two parameters (variables in the callee) can refer to the same location. Meaning that updating one of the variable also updates the other one.
+\\
+Aliasing hinders optimisation.
+
 \subsection{c)}
+If a compiler fetches the content of a reference parameter into a register, and then write to another reference parameter. 
+The programmer should make sure that the compiler re-fetch the first parameter, because the write might have affected this.
+This would occur if the parameters are aliases of the same location.
+
+essentially when using pass-by-reference parameters, if a function causes changes to the variables in the caller
+these changes would be reflected in the callee, since original values would have been overwritten.
 
 % \begin{minted}[linenos, bgcolor = bg, breaklines]{LISP}
 %     ; return the sum of a list

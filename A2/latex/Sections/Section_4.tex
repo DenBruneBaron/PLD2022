@@ -1,2 +1,35 @@
 \section{Program transformations}
 
+
+I'll be using the algorithm from wikipedia page on the topic $\lambda$-lifting.
+I personally just find it easier to follow since
+the steps are more clearly discribed compared to how it was described in our slides.
+\\
+\\
+The algorithm is as following on the wikipedia page:
+\begin{enumerate}
+    \item Rename the functions so that each function has a unique name.
+    \item Replace each free variable with an additional argument to the enclosing function, and pass that argument to every use of the function.
+    \item Replace every local function definition that has no free variables with an identical global function.
+    \item Repeat steps 2 and 3 until all free variables and local functions are eliminated.
+\end{enumerate}
+\newpage
+
+
+ORIGINAL CODE SNIPPET:
+\begin{verbatim}
+    let rec bizarre b q =
+    let mango z = b
+    in
+        if b then ( bizarre false mango )
+            else ( mango 17 , q 17 );;
+
+let dummy = function x -> false
+let bongo = bizarre true dummy;;
+\end{verbatim}
+
+STEP 1, it is possible to skip step one of the algorithm, since all functions
+are "unique" in the sence that there's no dublicates of functionnames that are
+considered another function than the original.
+
+STEP 2)

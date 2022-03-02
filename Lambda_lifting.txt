@@ -1,0 +1,178 @@
+f x = let dingo z = z + x
+    in
+        let
+            bingo w = dingo (47 - w)
+        in
+            g (bingo 419)
+
+g u = let mango x = x + h u
+    in 
+        let
+            dingo k = k
+        in
+            mango (dingo u)
+
+h w = 42
+
+-----------------------------------------------------
+
+f 14 = {47 - 419 + 14 + 42}                = -358 (this i u in the function g)
+
+f 14 = -316
+
+-----------------------------------------------------
+
+LAMBDA LIFTING: step 1) Rename every function so it has a unique name
+
+f x = let dingo1 z = z + x
+    in
+        let
+            bingo w = dingo1 (47 - w)
+        in
+            g (bingo 419)
+
+g u = let mango x = x + h u
+    in 
+        let
+            dingo2 k = k
+        in
+            mango (dingo2 u)
+
+h w = 42
+
+-----------------------------------------------------
+
+LAMBDA LIFTING: step 2) For every functioin f, replace every free variable
+in the definition of f with an additional argument of f. Pass that argument
+as an additional argument to every call of f.
+- STARTING WITH: dingo1
+
+f x = let dingo1 z dingo_x = z + dingo_x
+    in
+        let
+            bingo w = dingo1 (47 - w) dingo_x
+        in
+            g (bingo 419)
+
+g u = let mango x = x + h u
+    in 
+        let
+            dingo2 k = k
+        in
+            mango (dingo2 u)
+
+h w = 42
+
+
+
+- REPLACING FOR: bingo
+
+f x = let dingo1 z dingo_x = z + dingo_x
+    in
+        let
+            bingo w bingo_dingo_x = dingo1 (47 - w) bingo_dingo_x
+        in
+            g (bingo 419 x)
+
+g u = let mango x = x + h u
+    in 
+        let
+            dingo2 k = k
+        in
+            mango (dingo2 u)
+
+h w = 42
+
+
+
+- REPLACING FOR: mango
+
+f x = let dingo1 z dingo_x = z + dingo_x
+    in
+        let
+            bingo w bingo_dingo_x = dingo1 (47 - w) bingo_dingo_x
+        in
+            g (bingo 419 x)
+
+g u = let mango x mango_u = x + h mango_u
+    in 
+        let
+            dingo2 k = k
+        in
+            mango (dingo2 u) u
+
+h w = 42
+
+
+LAMBDA LIFTING: step 3) Replace every local function definition with
+no free variables with a global function that has the same definition. 
+
+f x = let dingo1 z dingo_x = z + dingo_x
+    in
+        let
+            bingo w bingo_dingo_x = dingo1 (47 - w) bingo_dingo_x
+        in
+            g (bingo 419 x)
+
+g u = let mango x mango_u = x + h mango_u
+    in 
+        let
+            dingo2 k = k
+        in
+            mango (dingo2 u) u
+
+h w = 42
+
+REPLACING dingo1 to dingo1'
+f' x = let
+            bingo w bingo_dingo_x = dingo1' (47 - w) bingo_dingo_x
+        in
+            g (bingo 419 x)
+
+dingo1' z dingo_x = z + dingo_x
+
+
+
+REPLACING bingo to bingo'
+
+f' x = g (bingo' 419 x)
+
+dingo1' z dingo_x = z + dingo_x
+bingo' w bingo_dingo_x = dingo1' (47 - w) bingo_dingo_x
+
+
+REPLACING mango to mango'
+
+g' u = let
+            dingo2 k = k
+        in
+            mango' (dingo2 u) u
+
+h w = 42
+
+mango' x mango_u = x + h mango_u
+
+
+
+REPLACING dingo2 to dingo2'
+
+g' u = mango' (dingo2' u) u
+
+h w = 42
+
+mango' x mango_u = x + h mango_u
+dingo2' k = k
+
+
+"nothing" will happen to h since h is already a global function.
+
+FINAL PROGRAM AFTER LAMBDA LIFTING.
+
+f' x = g (bingo' 419 x)
+dingo1' z dingo_x = z + dingo_x
+bingo' w bingo_dingo_x = dingo1' (47 - w) bingo_dingo_x
+
+g' u = mango' (dingo2' u) u
+h w = 42
+mango' x mango_u = x + h mango_u
+dingo2' k = k
