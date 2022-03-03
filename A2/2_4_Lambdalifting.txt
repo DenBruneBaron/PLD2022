@@ -24,7 +24,31 @@ let bongo = bizarre true dummy;;
 
 
 STEP 1, it is possible to skip step one of the algorithm, since all functions
-are "unique" in the sence that there's no dublicates of functionnames that are
+are "unique" in the sence that there's no dublicates(functions with the same name) of functionnames that are
 considered another function than the original.
 
-STEP 2)
+STEP 2)For every functioin f, replace every free variable
+in the definition of f with an additional argument of f. Pass that argument
+as an additional argument to every call of f.
+- STARTING WITH: mango
+
+let rec bizarre b q =
+    let mango z mango_b = mango_b
+    in
+        if b then ( bizarre false (mango z mango_b))
+            else ( mango 17 mango_b, q 17 );;
+
+let dummy = function x -> false
+let bongo = bizarre true dummy;;
+
+STEP 3) Replace every local function definition with
+no free variables with a global function that has the same definition. 
+
+let rec mango z mango_b = mango_b
+and bizarre b q =
+    if b then ( bizarre false (mango z mango_b))
+        else ( mango 17 mango_b, q 17 );;
+
+let dummy = function x -> false
+let bongo = bizarre true dummy;;
+

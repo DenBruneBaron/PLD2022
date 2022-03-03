@@ -16,9 +16,9 @@ The algorithm is as following on the wikipedia page:
 \newpage
 
 
-ORIGINAL CODE SNIPPET:
+\noindent \textbf{ ORIGINAL CODE SNIPPET:}
 \begin{verbatim}
-    let rec bizarre b q =
+let rec bizarre b q =
     let mango z = b
     in
         if b then ( bizarre false mango )
@@ -28,8 +28,51 @@ let dummy = function x -> false
 let bongo = bizarre true dummy;;
 \end{verbatim}
 
-STEP 1, it is possible to skip step one of the algorithm, since all functions
+\noindent \textbf{STEP 1}, it is possible to skip step one of the algorithm, since all functions
 are "unique" in the sence that there's no dublicates of functionnames that are
 considered another function than the original.
 
-STEP 2)
+\noindent \textbf{STEP 2)} the function named "mango" has a free variable b. So this variable has to be replaced 
+and passed to every use of the function
+
+I've chosen to replace variable name "b" with "mango\_b" and passed that argument to every other
+use of the function "mango".
+
+\begin{verbatim}
+let rec bizarre b q =
+    let mango z mango_b = mango_b
+    in
+        if b then ( bizarre false (mango z mango_b) )
+            else ( mango 17 mango_b , q 17 );;
+
+let dummy = function x -> false
+let bongo = bizarre true dummy;;
+\end{verbatim}
+
+\noindent \textbf{STEP 3)} Is to lift the function(s) to a global scope.
+
+REPLACING mango to mango'
+\begin{verbatim}
+let rec mango z mango_b = mango_b
+and bizarre b q =
+    if b then ( bizarre false (mango' z b))
+        else ( mango' 17 b, q 17 );;
+
+let dummy = function x -> false
+let bongo = bizarre true dummy;;
+
+mango' z mango_b = mango_b
+\end{verbatim}
+\newpage
+\noindent \textbf{FINAL Program after lambda lifting}
+\begin{verbatim}
+let rec bizarre' b q =
+    if b then ( bizarre false (mango' z b))
+        else ( mango' 17 b, q 17 );;
+
+let dummy = function x -> false
+let bongo = bizarre true dummy;;
+mango' z mango_b = mango_b
+\end{verbatim}
+
+\newpage

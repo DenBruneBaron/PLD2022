@@ -1622,6 +1622,9 @@ INPUT Sections/Section_2.tex
 INPUT ./Sections/Section_2.tex
 INPUT Sections/Section_2.tex
 INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/vf/public/fourier/futb8t.vf
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/fourier/futb8r.tfm
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/fourier/fourier-alt-bold.tfm
 INPUT ./Sections/Section_3.tex
 INPUT Sections/Section_3.tex
 INPUT ./Sections/Section_3.tex
@@ -1631,9 +1634,6 @@ INPUT ./Figures/Scope_rules.JPG
 INPUT Figures/Scope_rules.JPG
 INPUT ./Figures/Scope_rules.JPG
 INPUT ./Figures/Scope_rules.JPG
-INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/vf/public/fourier/futb8t.vf
-INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/fourier/futb8r.tfm
-INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/tfm/public/fourier/fourier-alt-bold.tfm
 INPUT ./Sections/Section_4.tex
 INPUT Sections/Section_4.tex
 INPUT ./Sections/Section_4.tex
@@ -1647,6 +1647,11 @@ INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/t1cmtt
 INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/ts1cmtt.fd
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/ts1cmtt.fd
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/ts1cmtt.fd
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/ts1cmtt.fd
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tctt1000.tfm
 INPUT ./Sections/Section_5.tex
 INPUT Sections/Section_5.tex
 INPUT ./Sections/Section_5.tex
@@ -1683,6 +1688,7 @@ INPUT report.aux
 INPUT ./report.out
 INPUT ./report.out
 INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb
 INPUT g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb
