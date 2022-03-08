@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.11)  3 MAR 2022 12:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.11)  4 MAR 2022 11:07
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1167,36 +1167,57 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 \tf@toc=\write9
 \openout9 = `report.toc'.
 
- [0] (./Sections/Section_1.tex) (./Sections/Section_2.texpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+ [0] (./Sections/Section_1.tex
+\openout3 = `report.pyg'.
+
+ (./_minted-report/default-pyg-prefix.pygstyle) (./_minted-report/default.pygstyle)
+Underfull \hbox (badness 10000) in paragraph at lines 2--37
+
+ []
+
+(./_minted-report/08C95E99C76E455AC015CFA934E1C4D526AE6820B3386F37E8E7D5FD822B1F94.pygtex
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1.
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 17.
+ (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+))
+\openout3 = `report.pyg'.
+
+ (./_minted-report/A81A0D8DBA7E142D8C2D6AFD2805BAE626AE6820B3386F37E8E7D5FD822B1F94.pygtex)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 \newpage
-              [1
+l.53 \end{minted}
+                  [1
 
-]) (./Sections/Section_3.tex
-<Figures/Scope_rules.JPG, id=63, 341.77687pt x 196.48407pt>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
+
+ []
+
+\openout3 = `report.pyg'.
+
+(./_minted-report/5A1A80D20E9EC3C5A59514C55BABC81F26AE6820B3386F37E8E7D5FD822B1F94.pygtex)) (./Sections/Section_2.tex [2] [3]) (./Sections/Section_3.tex
+<Figures/Scope_rules.JPG, id=76, 341.77687pt x 196.48407pt>
 File: Figures/Scope_rules.JPG Graphic file (type jpg)
 <use Figures/Scope_rules.JPG>
 Package pdftex.def Info: Figures/Scope_rules.JPG  used on input line 7.
 (pdftex.def)             Requested size: 258.75pt x 148.76279pt.
- [2 <./Figures/Scope_rules.JPG>]) (./Sections/Section_4.tex
+ [4 <./Figures/Scope_rules.JPG>]) (./Sections/Section_4.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--11
 
  []
 
-[3]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 20.
- (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
+[5]
 Overfull \hbox (11.83995pt too wide) in paragraph at lines 31--34
 \T1/futs/b/n/10 STEP 1\T1/futs/m/n/10 , it is po-s-sib-le to skip step one of the al-go-rit-hm, sin-ce all fun-ctions are "unique"in
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 58.
-(g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/ts1cmtt.fd
-File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [4] [5]) (./Sections/Section_5.tex
+[6] [7]) (./Sections/Section_5.tex
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 7.35999pt on input line 4.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1205,25 +1226,27 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.35999pt on input line 4.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.25598pt on input line 4.
-) [6] 
+) [8] 
 AED: lastpage setting LastPage
 (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: AA39653D2DC5707E883A5F0205F9C6AD;933.
+runsystem(del report.pyg)...executed.
+
  ) 
 Here is how much of TeX's memory you used:
- 41775 strings out of 478353
- 913421 string characters out of 5839074
- 1252900 words of memory out of 5000000
- 59180 multiletter control sequences out of 15000+600000
- 494652 words of font info for 121 fonts, out of 8000000 for 9000
+ 42023 strings out of 478353
+ 918170 string characters out of 5839074
+ 1257170 words of memory out of 5000000
+ 59403 multiletter control sequences out of 15000+600000
+ 499914 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,133p,1659b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
-{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on report.pdf (8 pages, 118147 bytes).
+ 99i,11n,133p,1659b,680s stack positions out of 5000i,500n,10000p,200000b,80000s
+{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on report.pdf (10 pages, 147960 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
  82 words of extra memory for PDF output out of 10000 (max. 10000000)
 

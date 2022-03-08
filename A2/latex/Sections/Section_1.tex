@@ -1,1 +1,75 @@
 \section{Garbage collection}
+So the idea would be to use linked lists in order to allocate the numbers. One 
+of the reason to use linked lists, is that "arrays" in my case the heap has a
+fized size in C.
+Linked lists also have the benefits of dynamic size and the ease of inserting/delition from
+compared to arrays.
+\\
+\\
+Function to insert a node at the end of a linked list.
+\begin{minted}[linenos, bgcolor = bg, breaklines]{C}
+void addLast(struct node **head, int val)
+{
+    //create a new node
+    struct node *newNode = malloc(sizeof(struct node));
+    newNode->data = val;
+    newNode->next     = NULL;
+
+    //if head is NULL, it is an empty list
+    if(*head == NULL)
+            *head = newNode;
+    //Otherwise, find the last node and add the newNode
+    else
+    {
+        struct node *lastNode = *head;
+
+        //last node's next address will be NULL.
+        while(lastNode->next != NULL)
+        {
+            lastNode = lastNode->next;
+        }
+
+        //add the newNode at the end of the linked list
+        lastNode->next = newNode;
+    }
+
+}
+\end{minted}
+\\
+Function to iterate the linked list and print the data.
+\begin{minted}[linenos, bgcolor = bg, breaklines]{C}
+void printList(struct node *head)
+{
+    struct node *temp = head;
+
+    //iterate the entire linked list and print the data
+    while(temp != NULL)
+    {
+            printf("%d->", temp->data);
+            temp = temp->next;
+    }
+    printf("NULL\n");
+}
+\end{minted}
+\\
+
+This is a function that could be used to remove a node when it is no longer in use
+in order to free up space in the heap.
+\begin{minted}[linenos, bgcolor = bg, breaklines]{C}
+Node* removeNode(int value, Node* head) {
+    Node* newHead = head;
+    if (head->value == value) {
+        newHead = head->next;
+        delete head;
+    }
+
+    while(head->next != nullptr && head->next->value != value)
+    head = head->next;
+    if(head->next) {
+    Node* temp = head->next;
+    head->next = head->next->next;
+    delete temp;
+    }
+    return newHead;
+}
+\end{minted}

@@ -120,6 +120,23 @@ end when the optimal solution has been found.
         """
 \end{minted}
 
+Another example of when nested comments needs to be taken into consideration is In
+the C language. Looking at the code snippet below, it is possible to see that 
+the nested comments does not work in the C language. The reason for this is, that
+the first $*/$ will terminate the opening of the multiline comment. So in order to make
+nested comments, the programmer has to tell the compiler that it needs to "remember" that
+if it sees two $/*$ (comment opening symbols) in succession the compiler needs to find two 
+consecutive $*/$ (closing symbols) in order to have terminated the outer and nested comment. 
+
+\begin{minted}[linenos, bgcolor = bg, breaklines]{c}
+    /*  This is the outer comment block
+        /* 
+            This is the inner comment block
+        */
+        This should be a comment, but is compiled.
+    */ 
+\end{minted}
+
 \noindent
 \textbf{Disadvantages}
 \begin{itemize}

@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{c+cm}{/*  This is the outer comment block}
+\PYG{c+cm}{        /*}
+\PYG{c+cm}{            This is the inner comment block}
+\PYG{c+cm}{        */}
+\PYG{+w}{        }\PYG{n}{This}\PYG{+w}{ }\PYG{n}{should}\PYG{+w}{ }\PYG{n}{be}\PYG{+w}{ }\PYG{n}{a}\PYG{+w}{ }\PYG{n}{comment}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{but}\PYG{+w}{ }\PYG{n}{is}\PYG{+w}{ }\PYG{n}{compiled}\PYG{p}{.}
+\PYG{+w}{    }\PYG{o}{*/}
+\end{Verbatim}
