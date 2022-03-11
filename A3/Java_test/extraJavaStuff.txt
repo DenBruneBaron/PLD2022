@@ -1,0 +1,21 @@
+    // T value1;
+
+    // public Bingo(T a) {
+    //     value1 = a;
+    // }
+
+    // public void bingoString(T t) {
+    //     System.out.println(t.toString());
+        
+    // }
+
+    // public void dingo (T t) {
+    //     bingoString(t);
+    // }
+
+
+        
+    public static void main(String[] args) {
+        Bingo<Integer> integerBingo = new Bingo<Integer>(12);
+        integerBingo.bingoString(12345);
+    }
