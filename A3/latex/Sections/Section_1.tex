@@ -19,12 +19,51 @@ T extends Object declared in class Bingo
 \end{verbatim}
 
 \subsection{b)}
-It is so unbelivable vaguely described what "bingoString()" is actually supposed to do. So I will assume that the intetntion
-of the method is to convert whatever input is given to a string using the method "bingoString()". Which means that 
+The following code should compile. But throw a NullPointerException. Otherwise, since we don't
+really know what BingoString is supposed to do in this specific code snippet, a runtime error could
+be cause by a wrong cast.
+
+\begin{minted}[linenos, bgcolor = bg, breaklines]{java}
+abstract class myAbstractClass {
+    public abstract String bingoString();
+}
+
+class Bingo<T extends myAbstractClass> {
+
+    public void dingo(T t) {
+        System.out.println(t.bingoString());
+    }
+
+
+    public static void main(String[] args) {
+        Bingo<myAbstractClass> myObj = new Bingo<>();
+        myObj.dingo(null);
+    }
+}
+\end{minted}
+
 \subsection{c)}
+Reusing the same piece of code, as in 1b only with a minor tweaks. This code will compile but do nothing.
+\begin{minted}[linenos, bgcolor = bg, breaklines]{java}
+abstract class myAbstractClass {
+    public abstract String bingoString();
+}
+
+class Bingo<T extends myAbstractClass> {
+
+    public void dingo(T t) {
+        System.out.println(t.bingoString());
+    }
+
+    public static void main(String[] args) {
+        
+    }
+}
+\end{minted}
 
 \subsection{d)}
-\subsection{e)}
-% \begin{minted}[linenos, bgcolor = bg, breaklines]{C}
+Yes the code would lead to a runtime error.
 
-% \end{minted}
+\subsection{e)}
+
+

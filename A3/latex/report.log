@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.11)  10 MAR 2022 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.11)  15 MAR 2022 11:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1175,31 +1175,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--9
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9.
 (g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)) (./Sections/Section_2.tex) (./Sections/Section_3.tex) (./Sections/Section_4.tex) (./Sections/Section_5.tex) (./Sections/Section_6.tex)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+)
+\openout3 = `report.pyg'.
+
+ (./_minted-report/default-pyg-prefix.pygstyle) (./_minted-report/default.pygstyle) (./_minted-report/792DFD9F8382D313B96C3ADABFD498015633056D4D41AD504206CFA15B879FF2.pygtex
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
+)
+\openout3 = `report.pyg'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 \newpage
-               [1
+l.62 \end{minted}
+                  [1
 
-] [2] 
+] (./_minted-report/0F050B7A41CAA244277C197B1C5E1A7C5633056D4D41AD504206CFA15B879FF2.pygtex)) (./Sections/Section_2.tex) (./Sections/Section_3.tex) (./Sections/Section_4.tex) (./Sections/Section_5.tex) (./Sections/Section_6.tex) [2] [3] 
 AED: lastpage setting LastPage
 (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 1EAE02FB13A27C9A0512710538B881F1;1298.
+runsystem(del report.pyg)...executed.
+
  ) 
 Here is how much of TeX's memory you used:
- 41722 strings out of 478353
- 912395 string characters out of 5839074
- 1251900 words of memory out of 5000000
- 59142 multiletter control sequences out of 15000+600000
- 472763 words of font info for 93 fonts, out of 8000000 for 9000
+ 41956 strings out of 478353
+ 916551 string characters out of 5839074
+ 1254095 words of memory out of 5000000
+ 59357 multiletter control sequences out of 15000+600000
+ 477412 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,133p,1659b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,11n,133p,1659b,659s stack positions out of 5000i,500n,10000p,200000b,80000s
 {g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><g:/Developer_Libraries/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on report.pdf (4 pages, 66586 bytes).
+Output written on report.pdf (5 pages, 71351 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
+ 154 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 
