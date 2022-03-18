@@ -1,5 +1,33 @@
 \section{A3.4}
 \subsection{a)}
+Root and mixed are two different functions.
+Root creates a the that has a root at X with either zero, two or three children.
+Mixed is a function that checks whether the tree created by the root function is
+a mixed tree. And will possibly return a boolean value if the tree created by root
+is or is not indeed a mixed tree.
+
 \subsection{b)}
+\begin{verbatim}
+    Root("gorilla",
+        Root("goat",
+            Root("duck",
+                Root("koala"), Root("manatee")
+            )
+            Root("impala")
+        )
+        Root("horse"), Root("ostrich")
+    )
+\end{verbatim}
+
 \subsection{c)}
+Creating a method called: leftmost
+
+I have the following.
+
+\begin{verbatim}
+    letmost(Root(E),E).
+    leftmost(Root(_, T1, _), E) :- leftmost(T1, E).
+    leftmost(Root(_, T1, _, _), E) :- leftmost(T1, E).
+\end{verbatim}
+
 \subsection{d)}

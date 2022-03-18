@@ -1,3 +1,34 @@
 \section{A3.2}
 \subsection{a)}
+
+\textbf{Advantages}
+\begin{itemize}
+    \item Extensive control over the program and which parts of the program
+    that should be able to use which modules. Can change the export statement in descendant classes.
+    \item Security. Having the prosibility to restrict certain parts of the program
+    from using specific moduels. (This looks very similar to public, private, protected as we see in Java. Only
+    at a slighy more general level in Eiffel.)
+\end{itemize}
+
+\noindent\textbf{Disadvantages}
+\begin{itemize}
+    \item Risk of making to many internal functions unusable to other parts of the
+    program. And or making the readability of the different exports a hassle to understand.
+    \item 
+\end{itemize}
+
 \subsection{b)}
+
+\textbf{Advantages}
+\begin{itemize}
+    \item Since every program in Modula-2 is composed of moduels, code can easily be resused.
+    \item Encapsulation. This gives the programmer the option to restrict visibility of cartain
+    parts of the code e.g. subprograms or data structures to other parts of a program.
+    \item The possibility to only import specific methods from a module.
+\end{itemize}
+
+\noindent\textbf{Disadvantages}
+\begin{itemize}
+    \item Importing a whole module only to use a couple of methods, may take up file size.
+    \item 
+\end{itemize}

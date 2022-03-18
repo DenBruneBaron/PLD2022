@@ -15,7 +15,6 @@ location: variable t of type T
 where T is a type-variable:
 T extends Object declared in class Bingo
 1 error
-
 \end{verbatim}
 
 \subsection{b)}
@@ -62,7 +61,8 @@ class Bingo<T extends myAbstractClass> {
 \end{minted}
 
 \subsection{d)}
-Yes the code would lead to a runtime error.
+Since we assume that the code will compile, this should lead to a run-time error.
+since we can't set a subclass equal to the value of a superclass in java.
 
 \subsection{e)}
 

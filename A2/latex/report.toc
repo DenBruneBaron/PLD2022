@@ -6,4 +6,4 @@
 \contentsline {subsection}{\numberline {2.3}c)}{3}{subsection.2.3}%
 \contentsline {section}{\numberline {3}Scope sules}{4}{section.3}%
 \contentsline {section}{\numberline {4}Program transformations}{5}{section.4}%
-\contentsline {section}{\numberline {5}Control structures}{8}{section.5}%
+\contentsline {section}{\numberline {5}Control structures}{9}{section.5}%

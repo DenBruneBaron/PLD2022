@@ -1,10 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1646388461 "d:/Uddannelse/Datalogi/KU/2_aar/PLD2022/A2/latex/report.tex" "report.pdf" "report" 1646388465
+["pdflatex"] 1647523568 "d:/Uddannelse/Datalogi/KU/2_aar/PLD2022/A2/latex/report.tex" "report.pdf" "report" 1647523571
   "Figures/Scope_rules.JPG" 1646212391 23264 f4a5af3f24ca5913b9f98b739f6fec7e ""
-  "Sections/Section_1.tex" 1646388458 2092 32ad1eb6978e9b1e1e033044deb54d9f ""
+  "Sections/Section_1.tex" 1646388492 2092 32ad1eb6978e9b1e1e033044deb54d9f ""
   "Sections/Section_2.tex" 1646308638 1869 259151116cb4b2a5bfaf7fca0e2e8eb5 ""
   "Sections/Section_3.tex" 1646308639 902 6cd0a27985eed1204a2bfff5e6b6ed95 ""
-  "Sections/Section_4.tex" 1646308621 2553 2bfa8309398357541d708316a01e891b ""
+  "Sections/Section_4.tex" 1647523564 2813 cb59af510756f530e3527507c6b5b77b ""
   "Sections/Section_5.tex" 1646224836 543 9b11fe80004a260f0a37901875ac2be6 ""
   "_minted-report/08C95E99C76E455AC015CFA934E1C4D526AE6820B3386F37E8E7D5FD822B1F94.pygtex" 1646388218 2078 aad3807968276f755a701597091f5b66 ""
   "_minted-report/5A1A80D20E9EC3C5A59514C55BABC81F26AE6820B3386F37E8E7D5FD822B1F94.pygtex" 1646387767 1941 a120b82898cef149860f43f6ef0d9197 ""
@@ -267,10 +267,10 @@
   "g:/Developer_Libraries/LaTeX/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1639220850 2820301 141d9a2ec94f43ccd040cf5f381ac085 ""
   "g:/Developer_Libraries/LaTeX/texlive/2021/texmf.cnf" 1637763325 713 e69b156964470283e0530f5060668171 ""
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "report.aux" 1646388464 2388 0a253ece2833c91dbf966ca06d35c583 "pdflatex"
-  "report.out" 1646388464 933 aa39653d2dc5707e883a5f0205f9c6ad "pdflatex"
+  "report.aux" 1647523571 2388 3825cedf534347af1c1178d5b70ba510 "pdflatex"
+  "report.out" 1647523571 933 aa39653d2dc5707e883a5f0205f9c6ad "pdflatex"
   "report.tex" 1645711154 2003 cfea90689fd7517f6a00211b46eee381 ""
-  "report.toc" 1646388464 611 0a536bf2bab6a9330419aca70a808fef "pdflatex"
+  "report.toc" 1647523571 611 6681d2c3b19d7554da93a4235036c65a "pdflatex"
   "tombstone.sty" 1645011542 4257 43d70af386ab41728e82c4be2565877d ""
   (generated)
   "report.aux"
