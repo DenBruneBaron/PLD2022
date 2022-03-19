@@ -1,4 +1,4 @@
-\babel@toc {danish}{}\relax 
+\babel@toc {danish}{}
 \contentsline {section}{\numberline {1}A3.1}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}a)}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}b)}{1}{subsection.1.2}%
@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {3.2}b)}{3}{subsection.3.2}%
 \contentsline {section}{\numberline {4}A3.4}{3}{section.4}%
 \contentsline {subsection}{\numberline {4.1}a)}{3}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}b)}{3}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}b)}{4}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}c)}{4}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}d)}{4}{subsection.4.4}%
 \contentsline {section}{\numberline {5}A3.5}{4}{section.5}%

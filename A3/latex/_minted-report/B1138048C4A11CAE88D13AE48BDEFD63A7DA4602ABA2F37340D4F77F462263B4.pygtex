@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{leftmost}\PYG{p}{(}\PYG{n+nf}{root}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}gorilla\PYGZdq{}}\PYG{p}{,} \PYG{n+nf}{root}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}goat\PYGZdq{}}\PYG{p}{,} \PYG{n+nf}{root}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}duck\PYGZdq{}}\PYG{p}{,} \PYG{n+nf}{root}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}koala\PYGZdq{}}\PYG{p}{),} \PYG{n+nf}{root}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}manatee)), root(\PYGZdq{}}\PYG{l+s+sAtom}{impala}\PYG{l+s+s2}{\PYGZdq{})), root(\PYGZdq{}}\PYG{l+s+sAtom}{horse}\PYG{l+s+s2}{\PYGZdq{}), root(\PYGZdq{}}\PYG{l+s+sAtom}{ostrch}\PYG{p}{)),} \PYG{l+s+s2}{\PYGZdq{}koala\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{class} \PYG{n+nc}{myClass} \PYG{o}{\PYGZob{}}
+    \PYG{k+kd}{public} \PYG{n}{String} \PYG{n+nf}{bingoString}\PYG{o}{()\PYGZob{}}
+        \PYG{k}{return} \PYG{l+s}{\PYGZdq{}This is bingo string, who dis?\PYGZdq{}}\PYG{o}{;}
+    \PYG{o}{\PYGZcb{}}
+
+\PYG{o}{\PYGZcb{}}
+
+\PYG{k+kd}{class} \PYG{n+nc}{Bingo}\PYG{o}{\PYGZlt{}}\PYG{n}{T} \PYG{k+kd}{extends} \PYG{n}{myClass}\PYG{o}{\PYGZgt{}} \PYG{o}{\PYGZob{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{dingo}\PYG{o}{(}\PYG{n}{T} \PYG{n}{t}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+        \PYG{n}{System}\PYG{o}{.}\PYG{n+na}{out}\PYG{o}{.}\PYG{n+na}{println}\PYG{o}{(}\PYG{n}{t}\PYG{o}{.}\PYG{n+na}{bingoString}\PYG{o}{());}
+    \PYG{o}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kd}{static} \PYG{k+kt}{void} \PYG{n+nf}{main}\PYG{o}{(}\PYG{n}{String}\PYG{o}{[]} \PYG{n}{args}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+        \PYG{n}{Bingo} \PYG{n}{newBingo} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Bingo}\PYG{o}{();}
+        \PYG{n}{newBingo}\PYG{o}{.}\PYG{n+na}{dingo}\PYG{o}{(}\PYG{k}{new} \PYG{n}{myClass}\PYG{o}{());}
+    \PYG{o}{\PYGZcb{}}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

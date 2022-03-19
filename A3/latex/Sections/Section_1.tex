@@ -44,18 +44,22 @@ class Bingo<T extends myAbstractClass> {
 \subsection{c)}
 Reusing the same piece of code, as in 1b only with a minor tweaks. This code will compile but do nothing.
 \begin{minted}[linenos, bgcolor = bg, breaklines]{java}
-abstract class myAbstractClass {
-    public abstract String bingoString();
+class myClass {
+    public String bingoString(){
+        return "This is bingo string, who dis?";
+    }
+
 }
 
-class Bingo<T extends myAbstractClass> {
+class Bingo<T extends myClass> {
 
     public void dingo(T t) {
         System.out.println(t.bingoString());
     }
 
     public static void main(String[] args) {
-        
+        Bingo newBingo = new Bingo();
+        newBingo.dingo(new myClass());
     }
 }
 \end{minted}
