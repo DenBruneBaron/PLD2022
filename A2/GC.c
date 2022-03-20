@@ -31,15 +31,11 @@ typedef uint16_t heapIndex;
 heapNode heap[0x8000]; /*0x8000 largest possible integer in hexadecimal*/
 heapIndex nextFreeNode; /* index of next free node */
 
-
-
 void initHeap() /* initialize heap */
 {
   /* You might want to change the initialisation to suit your GC method */
   nextFreeNode = 1;
 }
-
-
 
 heapIndex allocateNumber(uint32_t n) /* allocate number node */
 {
@@ -55,8 +51,6 @@ heapIndex allocateNumber(uint32_t n) /* allocate number node */
   return nextFreeNode++;
 }
 
-
-
 uint32_t getNumber(heapIndex v) /* get number value of number node */
 {
   heapNode node = heap[v];
@@ -66,8 +60,6 @@ uint32_t getNumber(heapIndex v) /* get number value of number node */
   }
   return node >> 1;
 }
-
-
 
 heapIndex cons(heapIndex head, heapIndex tail) /* allocate pair node */
 {
@@ -83,8 +75,6 @@ heapIndex cons(heapIndex head, heapIndex tail) /* allocate pair node */
   return nextFreeNode++;
 }
 
-
-
 heapIndex car(heapIndex value) /* take head of pair node */
 {
   
@@ -95,8 +85,6 @@ heapIndex car(heapIndex value) /* take head of pair node */
   }
   return (node>>16) & 0x7fff;
 }
-
-
 
 heapIndex cdr(heapIndex value) /* take tail of pair node */
 {
