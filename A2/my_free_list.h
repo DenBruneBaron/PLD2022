@@ -23,8 +23,9 @@ struct node {
   struct node *_next_node;
 };
 
+
 struct free_list_t {
-  struct node **_lst; // pointer to list of node pointers
+  struct node **_lst_pointer; // pointer to list of node pointers
   struct node *_first_free; // pointer to the first free node in the list
 
   // frees node at index idx
@@ -37,6 +38,7 @@ struct free_list_t {
   // and false otherwise
   bool (*is_empty)(struct free_list_t *this);
 };
+
 
 // turn-around to use functions in C structures
 extern const struct free_list_class {

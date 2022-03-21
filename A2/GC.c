@@ -30,6 +30,8 @@ typedef uint16_t heapIndex;
 /*     and nodes can be taken from and put back to the */
 /*     front of the list                               */
 
+
+
 heapNode heap[0x8000];
 struct free_list_t free_list;
 
