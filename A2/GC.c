@@ -6,6 +6,8 @@
 #define __STDC_FORMAT_MACROS
 #include <inttypes.h>
 
+#include "my_free_list.h"
+
 typedef uint32_t heapNode;
 typedef uint16_t heapIndex;
 
@@ -28,18 +30,17 @@ typedef uint16_t heapIndex;
 /*     and nodes can be taken from and put back to the */
 /*     front of the list                               */
 
-heapNode heap[0x8000]; /*0x8000 largest possible integer in hexadecimal*/
-heapIndex nextFreeNode; /* index of next free node */
+heapNode heap[0x8000];
+struct free_list_t free_list;
 
 void initHeap() /* initialize heap */
 {
-  /* You might want to change the initialisation to suit your GC method */
-  nextFreeNode = 1;
+  free_list = free_list_t.new(0x8000);
 }
 
 heapIndex allocateNumber(uint32_t n) /* allocate number node */
 {
-  if (nextFreeNode == 0x8000) {
+  if (free_list.is_empty(&free_list)) {
     fprintf(stderr, "Out of heap space\n");
     exit(1);
   }
@@ -47,8 +48,9 @@ heapIndex allocateNumber(uint32_t n) /* allocate number node */
     fprintf(stderr, "Number too big to represent: 0x%"PRIx32"\n", n);
     exit(1);
   }
+  const heapIndex nextFreeNode = free_list.get(&free_list);
   heap[nextFreeNode] = (n<<1) | 1;
-  return nextFreeNode++;
+  return nextFreeNode;
 }
 
 uint32_t getNumber(heapIndex v) /* get number value of number node */
@@ -63,7 +65,7 @@ uint32_t getNumber(heapIndex v) /* get number value of number node */
 
 heapIndex cons(heapIndex head, heapIndex tail) /* allocate pair node */
 {
-  if (nextFreeNode == 0x8000) {
+  if (free_list.is_empty(&free_list)) {
     fprintf(stderr, "Out of heap space\n");
     exit(1);
   }
@@ -71,8 +73,9 @@ heapIndex cons(heapIndex head, heapIndex tail) /* allocate pair node */
     fprintf(stderr, "Illegal pair: (0x%"PRIx32", 0x%"PRIx32")\n", head, tail);
     exit(1);
   }
+  const heapIndex nextFreeNode = free_list.get(&free_list);
   heap[nextFreeNode] = (head<<16) | (tail<<1);
-  return nextFreeNode++;
+  return nextFreeNode;
 }
 
 heapIndex car(heapIndex value) /* take head of pair node */
@@ -97,8 +100,6 @@ heapIndex cdr(heapIndex value) /* take tail of pair node */
   return (node>>1) & 0x7fff;
 }
 
-
-
 void printTree(heapIndex v) /* print tree */
 {
   if (v == 0) { printf("()"); return; }
@@ -114,21 +115,43 @@ void printTree(heapIndex v) /* print tree */
   printf(")");
 }
 
+int gc_mark(heapIndex x) {
+  if (x == 0) return 0;
+
+  heapNode n = heap[x];
+  if (n & 0x80000000) return 0;
+  heap[x] |= (0x80000000);
+  
+  int nb_of_live_nodes = 1;
+  if ((n & 1) == 0) 
+    nb_of_live_nodes += gc_mark(car(x)) + gc_mark(cdr(x));
+
+  return nb_of_live_nodes;
+}
+
+void gc_sweep() {
+  for (heapIndex x = 1; x < 0x8000; ++x) {
+    if (heap[x] & 0x80000000) {
+      heap[x] &= ~0x80000000;
+    }
+    else {
+      free_list.free_idx(x, &free_list);
+    }
+  }
+} 
 
 heapIndex gc(heapIndex root) /* garbage collect and return new root */
 {
-  int liveCount = 0;
+  int liveCount = gc_mark(root);
+  gc_sweep();
 
   fprintf(stderr,"%d live nodes\n", liveCount);
+
   return root;
 }
 
 /* You can add and modify code above this line */
   
-
-
-
-
 /* Don't change anything below this line */
 
 heapIndex iota(uint32_t n) /* make a list of integers from 1 to n */
@@ -175,7 +198,6 @@ int main(int ac, char **av)
   
   primes = gc(primes);
 
-
   printf("\n");
   printTree(primes);
   printf("\n\n");
@@ -198,7 +220,6 @@ int main(int ac, char **av)
   }
   
   primes = gc(primes);
-
 
   exit(0);
 }
