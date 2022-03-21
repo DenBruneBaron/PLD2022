@@ -1,5 +1,5 @@
-#ifndef FREE_LIST_H
-#define FREE_LIST_H
+#ifndef MY_FREE_LIST_H
+#define MY_FREE_LIST_H
 
 #include <inttypes.h>
 #include <stdbool.h> 
