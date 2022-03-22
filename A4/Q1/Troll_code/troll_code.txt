@@ -1,0 +1,8 @@
+S:=sum 12d6;
+
+call rolldice(S)
+
+function rolldice(x) =
+  modcheck:=x mod 7;
+  if modcheck = 0 then call rolldice(sum 12d6)
+  else x

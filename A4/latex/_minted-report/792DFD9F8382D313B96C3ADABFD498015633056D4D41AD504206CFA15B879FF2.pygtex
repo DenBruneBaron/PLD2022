@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{abstract} \PYG{k+kd}{class} \PYG{n+nc}{myAbstractClass} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{public} \PYG{k+kd}{abstract} \PYG{n}{String} \PYG{n+nf}{bingoString}\PYG{p}{();}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{class} \PYG{n+nc}{Bingo}\PYG{o}{\PYGZlt{}}\PYG{n}{T} \PYG{k+kd}{extends} \PYG{n}{myAbstractClass}\PYG{o}{\PYGZgt{}} \PYG{p}{\PYGZob{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{dingo}\PYG{p}{(}\PYG{n}{T} \PYG{n}{t}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{n}{t}\PYG{p}{.}\PYG{n+na}{bingoString}\PYG{p}{());}
+    \PYG{p}{\PYGZcb{}}
+
+
+    \PYG{k+kd}{public} \PYG{k+kd}{static} \PYG{k+kt}{void} \PYG{n+nf}{main}\PYG{p}{(}\PYG{n}{String}\PYG{o}{[]} \PYG{n}{args}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{Bingo}\PYG{o}{\PYGZlt{}}\PYG{n}{myAbstractClass}\PYG{o}{\PYGZgt{}} \PYG{n}{myObj} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Bingo}\PYG{o}{\PYGZlt{}\PYGZgt{}}\PYG{p}{();}
+        \PYG{n}{myObj}\PYG{p}{.}\PYG{n+na}{dingo}\PYG{p}{(}\PYG{k+kc}{null}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

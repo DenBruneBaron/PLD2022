@@ -1,0 +1,73 @@
+\section{A3.1}
+
+\subsection{a)}
+The compiler rejects the program with a compile error, since the method
+"bingoString()" isn't defined for the generic type T.
+\\
+\\
+This is the error message I get when I try to compile the program
+\begin{verbatim}
+Bingo.java:9: error: cannot find symbol
+    System.out.println(t.bingoString());
+                        ^
+symbol: method bingoString()
+location: variable t of type T
+where T is a type-variable:
+T extends Object declared in class Bingo
+1 error
+\end{verbatim}
+
+\subsection{b)}
+The following code should compile. But throw a NullPointerException. Otherwise, since we don't
+really know what BingoString is supposed to do in this specific code snippet, a runtime error could
+be cause by a wrong cast.
+
+\begin{minted}[linenos, bgcolor = bg, breaklines]{java}
+abstract class myAbstractClass {
+    public abstract String bingoString();
+}
+
+class Bingo<T extends myAbstractClass> {
+
+    public void dingo(T t) {
+        System.out.println(t.bingoString());
+    }
+
+
+    public static void main(String[] args) {
+        Bingo<myAbstractClass> myObj = new Bingo<>();
+        myObj.dingo(null);
+    }
+}
+\end{minted}
+
+\subsection{c)}
+Reusing the same piece of code, as in 1b only with a minor tweaks. This code will compile but do nothing.
+\begin{minted}[linenos, bgcolor = bg, breaklines]{java}
+class myClass {
+    public String bingoString(){
+        return "This is bingo string, who dis?";
+    }
+
+}
+
+class Bingo<T extends myClass> {
+
+    public void dingo(T t) {
+        System.out.println(t.bingoString());
+    }
+
+    public static void main(String[] args) {
+        Bingo newBingo = new Bingo();
+        newBingo.dingo(new myClass());
+    }
+}
+\end{minted}
+
+\subsection{d)}
+Since we assume that the code will compile, this should lead to a run-time error.
+since we can't set a subclass equal to the value of a superclass in java.
+
+\subsection{e)}
+
+

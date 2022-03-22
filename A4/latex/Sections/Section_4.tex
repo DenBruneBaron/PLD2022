@@ -1,0 +1,41 @@
+\section{A3.4}
+\subsection{a)}
+Root and mixed are two different functions.
+Root creates a the that has a root at X with either zero, two or three children.
+Mixed is a function that checks whether the tree created by the root function is
+a mixed tree. And will possibly return a boolean value if the tree created by root
+is or is not indeed a mixed tree.
+
+\subsection{b)}
+\begin{verbatim}
+    root("gorilla",
+        root("goat",
+            root("duck",
+                root("koala"), Root("manatee")),
+            root("impala")
+        )
+        root("horse"), Root("ostrich"))
+\end{verbatim}
+
+\subsection{c)}
+Creating a method called: leftmost
+and implementing this in prolog:
+
+I have the following.
+
+\begin{minted}[linenos, bgcolor = bg, breaklines]{prolog}
+leftmost(root(E),E).
+leftmost(root(_, T1, _), E) :- leftmost(T1, E).
+leftmost(root(_, T1, _, _), E) :- leftmost(T1, E).
+
+mixed(root(X, T1, T2, T3)) :- string(X), mixed(T1), mixed(T2), mixed(T3).
+mixed(root(X, T1, T2)) :- string(X), mixed(T1), mixed(T2).
+mixed(root(X) :- string(X).
+\end{minted}
+
+Query for calling the prolog function
+\begin{minted}[linenos, bgcolor = bg, breaklines]{prolog}
+leftmost(root("gorilla", root("goat", root("duck", root("koala"), root("manatee)), root("impala")), root("horse"), root("ostrch)), "koala")
+\end{minted}
+
+\subsection{d)}
